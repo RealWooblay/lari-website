@@ -147,10 +147,10 @@ export default function Page() {
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
-                <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
+                <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
+                <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
                 {/* <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a> */}
-                <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
+                <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
               </div>
             </div>
 
@@ -190,10 +190,10 @@ export default function Page() {
         {isMenuOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
-              <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
+              <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
+              <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
               {/* <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a> */}
-              <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
+              <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-5">
