@@ -406,7 +406,7 @@ export default function Page() {
                 How to Buy
               </h2>
               {/* Vertical on mobile, horizontal on desktop */}
-              <div className="relative flex flex-col md:flex-row items-center justify-between gap-2 md:gap-10">
+              <div className="relative flex flex-col md:flex-row items-center justify-between gap-2 md:gap-6">
 
                 {/* Decorative line behind the steps (Desktop Only) */}
                 <div className="absolute md:inset-x-0 md:top-1/2 md:-translate-y-1/2 border-b border-gray-300 hidden md:block" />
@@ -415,7 +415,7 @@ export default function Page() {
                 <div className="text-center z-10">
                   <a href="https://www.hashpack.app/download" target="_blank" rel="noopener noreferrer">
                     <motion.div className="px-16 py-12 cursor-pointer rounded-lg mb-2 font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 hover:opacity-90 shadow-md text-sm md:text-base">
-                      Get Hashpack
+                      Get Hashpack Here
                     </motion.div>
                   </a>
                 </div>
@@ -474,7 +474,7 @@ export default function Page() {
                       }}
                       className="px-16 py-12 cursor-pointer rounded-lg mb-2 font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 hover:opacity-90 shadow-md text-sm md:text-base"
                     >
-                      Get HBAR
+                      Get HBAR Here
                     </motion.div>
                   </a>
                 </div>
@@ -533,7 +533,7 @@ export default function Page() {
                       }}
                       className="px-16 py-12 cursor-pointer rounded-lg font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 hover:opacity-90 shadow-md text-sm md:text-base"
                     >
-                      Buy LARI
+                      Buy LARI Now
                     </motion.div>
                   </a>
                 </div>
