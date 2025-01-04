@@ -76,7 +76,7 @@ export default function Page() {
       setMarketCap('Loading...')
       setTvl('Loading...')
 
-      const response = await fetch('https://grelf.me/lol.php?action=analyze&tokenId=0.0.731861')
+      const response = await fetch('https://grelf.me/lol.php?action=analyze&tokenId=0.0.7893583')
       if (!response.ok) throw new Error('Network response was not ok')
 
       const data = await response.json()
