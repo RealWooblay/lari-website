@@ -156,13 +156,13 @@ export default function Page() {
 
             {/* Social Icons and Buy Now Button */}
             <div className="hidden md:flex items-center">
-              <a className="text-gray-600 hover:text-gray-900 py-2">
+              <a className="text-gray-600 hover:text-gray-900 py-2" href="https://x.com/lari_hbar" target="_blank" rel="noopener noreferrer">
                 <Image src="/xIcon.png" alt="x" width={20} height={20} className='cursor-pointer' />
               </a>
-              <a className="text-gray-600 hover:text-gray-900 px-3 py-2">
+              <a className="text-gray-600 hover:text-gray-900 px-3 py-2" href="https://t.me/+JggX0Bsc_8AwMTZh" target="_blank" rel="noopener noreferrer">
                 <Image src="/tg.png" alt="tg" width={50} height={50} className='cursor-pointer' />
               </a>
-              <a href="https://www.saucerswap.finance/swap/HBAR/0.0.731861" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.saucerswap.finance/swap/HBAR/0.0.7893583" target="_blank" rel="noopener noreferrer">
                 <button className="m-2 px-6 py-3 text-sm md:text-lg text-white rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:opacity-90 flex items-center justify-center shadow-lg">
                   Buy LARI →
                 </button>
@@ -197,10 +197,10 @@ export default function Page() {
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
               <div className="flex items-center px-5">
-                <a className="text-gray-600 hover:text-gray-900 px-3 py-2">
+                <a className="text-gray-600 hover:text-gray-900 px-3 py-2" href="https://x.com/lari_hbar" target="_blank" rel="noopener noreferrer">
                   <Image src="/xIcon.png" alt="x" width={20} height={20} className='cursor-pointer' />
                 </a>
-                <a className="text-gray-600 hover:text-gray-900 px-3 py-2">
+                <a className="text-gray-600 hover:text-gray-900 px-3 py-2" href="https://t.me/+JggX0Bsc_8AwMTZh" target="_blank" rel="noopener noreferrer">
                   <Image src="/tg.png" alt="tg" width={50} height={50} className='cursor-pointer' />
                 </a>
               </div>
@@ -268,7 +268,7 @@ export default function Page() {
                 <span style={{ color: 'green' }}>
                   {/* CTA Button in a purple/blue gradient for more contrast */}
                 </span>
-                <a href="https://www.saucerswap.finance/swap/HBAR/0.0.731861" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.saucerswap.finance/swap/HBAR/0.0.7893583" target="_blank" rel="noopener noreferrer">
                   <button className="mt-2 px-6 py-3 text-sm md:text-lg rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:opacity-90 flex items-center justify-center shadow-lg" href="https://www.saucerswap.finance/swap">
                     <ShoppingCart size={20} className="mr-2" />
                     Buy LARI Now
@@ -515,7 +515,7 @@ export default function Page() {
 
                 {/* STEP 3 */}
                 <div className="text-center z-10">
-                  <a href="https://www.saucerswap.finance/swap/HBAR/0.0.731861" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.saucerswap.finance/swap/HBAR/0.0.7893583" target="_blank" rel="noopener noreferrer">
                     <motion.div
                       animate={{
                         boxShadow: [
@@ -554,10 +554,10 @@ export default function Page() {
                 actually a little further just here
               </div>
               <div className="flex items-center">
-                <a className="text-gray-600 hover:text-gray-900 py-2">
+                <a className="text-gray-600 hover:text-gray-900 py-2" href="https://x.com/lari_hbar" target="_blank" rel="noopener noreferrer">
                   <Image src="/xIcon.png" alt="x" width={20} height={20} className="cursor-pointer" />
                 </a>
-                <a className="text-gray-600 hover:text-gray-900 py-2">
+                <a className="text-gray-600 hover:text-gray-900 py-2" href="https://t.me/+JggX0Bsc_8AwMTZh" target="_blank" rel="noopener noreferrer">
                   <Image src="/tg.png" alt="tg" width={50} height={50} className="cursor-pointer" />
                 </a>
               </div>
