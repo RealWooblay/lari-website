@@ -31,7 +31,7 @@ export default function Page() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('0.0.7915979');
+    navigator.clipboard.writeText('0.0.7893583');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000); // Revert back after 2 seconds
   };
@@ -205,7 +205,7 @@ export default function Page() {
                 </a>
               </div>
               <div className="mt-3 px-2">
-                <a href="https://www.saucerswap.finance/swap/HBAR/0.0.731861" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.saucerswap.finance/swap/HBAR/0.0.7893583" target="_blank" rel="noopener noreferrer">
                   <button className="m-2 px-6 py-3 text-sm md:text-lg text-white rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:opacity-90 flex items-center justify-center shadow-lg" href="https://www.saucerswap.finance/swap">
                     Buy LARI →
                   </button>
@@ -311,7 +311,7 @@ export default function Page() {
               style={{ zIndex: 0 }} // ensure it's behind nothing else
             >
               <iframe
-                src="https://dexscreener.com/hedera/0x02437f36e30867a70bd4dfb011b2404477314846?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+                src="https://dexscreener.com/hedera/0xdbeadbd5590ff8cfca8e6ac40e983ec350f1efe3?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
                 className="
           absolute 
           top-0 
@@ -373,7 +373,7 @@ export default function Page() {
               <div className="mt-4 flex items-center gap-2">
                 {/* Replace this hard-coded ID with your actual token ID if needed */}
                 <p id="token-id" className="font-semibold text-gray-900 text-sm md:text-base">
-                  Token ID: 0.0.7915979
+                  Token ID: 0.0.7893583
                 </p>
                 <button
                   onClick={handleCopy}
