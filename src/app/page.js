@@ -149,7 +149,7 @@ export default function Page() {
               <div className="ml-10 flex items-baseline space-x-4">
                 <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
                 <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
-                <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a>
+                {/* <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a> */}
                 <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
               </div>
             </div>
@@ -163,7 +163,7 @@ export default function Page() {
                 <Image src="/tg.png" alt="tg" width={50} height={50} className='cursor-pointer' />
               </a>
               <a href="https://www.saucerswap.finance/swap/HBAR/0.0.7893583" target="_blank" rel="noopener noreferrer">
-                <button className="m-2 px-6 py-3 text-sm md:text-lg text-white rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:opacity-90 flex items-center justify-center shadow-lg">
+                <button className="m-2 px-6 py-3 text-sm md:text-lg text-white rounded-xl bg-gradient-to-r from-green-500 to-green-800 hover:opacity-90 flex items-center justify-center shadow-lg">
                   Buy LARI →
                 </button>
               </a>
@@ -192,7 +192,7 @@ export default function Page() {
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
               <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
-              <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a>
+              {/* <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a> */}
               <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-base font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
             </div>
             <div className="pt-4 pb-3 border-t border-gray-200">
@@ -206,7 +206,7 @@ export default function Page() {
               </div>
               <div className="mt-3 px-2">
                 <a href="https://www.saucerswap.finance/swap/HBAR/0.0.7893583" target="_blank" rel="noopener noreferrer">
-                  <button className="m-2 px-6 py-3 text-sm md:text-lg text-white rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:opacity-90 flex items-center justify-center shadow-lg" href="https://www.saucerswap.finance/swap">
+                  <button className="m-2 px-6 py-3 text-sm md:text-lg text-white rounded-xl bg-gradient-to-r from-green-500 to-green-800 hover:opacity-90 flex items-center justify-center shadow-lg" href="https://www.saucerswap.finance/swap">
                     Buy LARI →
                   </button>
                 </a>
@@ -233,6 +233,31 @@ export default function Page() {
             {/* Added a semi-transparent gradient overlay for a more cohesive look */}
           </span>
           <div className="absolute inset-0 bg-gradient-to-b from-[#1c1c1c66] to-[#00000099] z-0" />
+
+          <div className="z-10">
+            <span style={{ color: 'green' }}>
+              {/* Title with a slightly bigger text, subtle text-shadow */}
+            </span>
+            <h1
+              className="text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-xl"
+              style={{ textShadow: "2px 3px 6px rgba(0,0,0,0.8)" }}
+            >
+              LARI Token
+            </h1>
+
+            <div className="mt-4 flex items-center gap-2">
+              {/* Replace this hard-coded ID with your actual token ID if needed */}
+              <p id="token-id" className="font-semibold text-white text-sm md:text-base">
+                Token ID: 0.0.7893583
+              </p>
+              <button
+                onClick={handleCopy}
+                className="inline-flex items-center px-3 py-1 text-sm rounded-md"
+              >
+                {copied ? <Check size={16} className="mr-1" /> : <Copy size={16} className="mr-1" />}
+              </button>
+            </div>
+          </div>
           {/* Content Container */}
           <div className="z-10 container mx-auto px-4 py-12 text-center flex flex-col gap-8">
             <div className="flex flex-wrap justify-center gap-8">
@@ -243,7 +268,7 @@ export default function Page() {
               ].map((stat, index) => (
                 <div
                   key={index}
-                  className="w-40 h-40 md:w-48 md:h-48 bg-white/90 text-gray-800 rounded-xl shadow-xl flex flex-col justify-center items-center transform transition-all duration-300 hover:scale-105 hover:-rotate-2"
+                  className="w-40 h-40 md:w-48 md:h-48 bg-gradient-to-b from-green-500 to-white text-gray-800 rounded-xl shadow-xl flex flex-col justify-center items-center transform transition-all duration-300 hover:scale-105 hover:-rotate-2"
                 >
                   <div className="flex items-center">
                     {stat.icon}
@@ -255,21 +280,12 @@ export default function Page() {
             </div>
 
             <div className="flex flex-col items-center gap-6">
-              <span style={{ color: 'green' }}>
-                {/* Title with a slightly bigger text, subtle text-shadow */}
-              </span>
-              <h1
-                className="text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-xl"
-                style={{ textShadow: "2px 3px 6px rgba(0,0,0,0.8)" }}
-              >
-                LARI Token is beaming to the Moon
-              </h1>
               <div>
                 <span style={{ color: 'green' }}>
                   {/* CTA Button in a purple/blue gradient for more contrast */}
                 </span>
                 <a href="https://www.saucerswap.finance/swap/HBAR/0.0.7893583" target="_blank" rel="noopener noreferrer">
-                  <button className="mt-2 px-6 py-3 text-sm md:text-lg rounded-xl bg-gradient-to-r from-indigo-500 to-blue-600 hover:opacity-90 flex items-center justify-center shadow-lg" href="https://www.saucerswap.finance/swap">
+                  <button className="mt-2 px-6 py-3 text-sm md:text-lg rounded-xl bg-gradient-to-r from-green-500 to-green-800 hover:opacity-90 flex items-center justify-center shadow-lg">
                     <ShoppingCart size={20} className="mr-2" />
                     Buy LARI Now
                   </button>
@@ -311,7 +327,7 @@ export default function Page() {
               style={{ zIndex: 0 }} // ensure it's behind nothing else
             >
               <iframe
-                src="https://dexscreener.com/hedera/0xdbeadbd5590ff8cfca8e6ac40e983ec350f1efe3?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=0&chartType=usd&interval=15"
+                src="https://dexscreener.com/hedera/0xdbeadbd5590ff8cfca8e6ac40e983ec350f1efe3?embed=1&loadChartSettings=0&trades=0&tabs=0&info=0&chartLeftToolbar=0&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=1"
                 className="
           absolute 
           top-0 
@@ -327,7 +343,7 @@ export default function Page() {
         </section>
 
         {/* FUNNY TIME GALLERY */}
-        <section id="hehe" className="pt-20 pb-10">
+        {/* <section id="hehe" className="pt-20 pb-10">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl md:text-5xl flex justify-center font-handwriting mb-8">
               Funny Time
@@ -338,7 +354,7 @@ export default function Page() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* ABOUT SECTION */}
         <section
@@ -352,9 +368,7 @@ export default function Page() {
                 About LARI Token
               </h2>
               <p className="text-sm md:text-base mb-8 leading-relaxed">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s...
+                LARI crashed into the trenches on first day of Memejob.fun's launch and the dev quickly rugged and abandoned the project. The community then took over the token in order to save LARI and set up socials, a website and multiple liquidity pools. LARI hopes to increase awareness around LARI v2 pool rewards on Saucerswap, as well as provide educational content on the Saucerswap ecosystem
               </p>
 
               <div className="space-y-2">
@@ -414,7 +428,7 @@ export default function Page() {
                 {/* STEP 1 */}
                 <div className="text-center z-10">
                   <a href="https://www.hashpack.app/download" target="_blank" rel="noopener noreferrer">
-                    <motion.div className="px-16 py-12 cursor-pointer rounded-lg mb-2 font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 hover:opacity-90 shadow-md text-sm md:text-base">
+                    <motion.div className="px-16 py-12 cursor-pointer rounded-lg mb-2 font-semibold text-white bg-gradient-to-r from-green-800 to-green-500 hover:opacity-90 shadow-md text-sm md:text-base">
                       Get Hashpack Here
                     </motion.div>
                   </a>
@@ -460,9 +474,9 @@ export default function Page() {
                     <motion.div
                       animate={{
                         boxShadow: [
-                          '0 0 10px rgba(0,0,0,0.3)',
-                          '0 0 20px rgba(0,0,0,0.3)',
-                          '0 0 10px rgba(0,0,0,0.3)',
+                          '0 0 10px rgba(0, 255, 8, 0.3)',
+                          '0 0 20px rgba(0, 255, 8, 0.6)',
+                          '0 0 10px rgba(0, 255, 8, 0.3)',
                         ],
                         scale: [1, 1.03, 1],
                       }}
@@ -472,7 +486,7 @@ export default function Page() {
                         repeatType: 'mirror',
                         ease: 'easeInOut',
                       }}
-                      className="px-16 py-12 cursor-pointer rounded-lg mb-2 font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 hover:opacity-90 shadow-md text-sm md:text-base"
+                      className="px-16 py-12 cursor-pointer rounded-lg mb-2 font-semibold text-white bg-gradient-to-r from-green-800 to-green-500 hover:opacity-90 shadow-md text-sm md:text-base"
                     >
                       Get HBAR Here
                     </motion.div>
@@ -519,9 +533,9 @@ export default function Page() {
                     <motion.div
                       animate={{
                         boxShadow: [
-                          '0 0 25px rgba(0,136,255,0.7)',
-                          '0 0 40px rgba(0,136,255,0.9)',
-                          '0 0 25px rgba(0,136,255,0.7)',
+                          '0 0 25px rgba(0, 255, 8, 0.5)',
+                          '0 0 40px rgba(0, 255, 8, 0.8)',
+                          '0 0 25px rgba(0, 255, 8, 0.5)',
                         ],
                         scale: [1, 1.06, 1],
                       }}
@@ -531,7 +545,7 @@ export default function Page() {
                         repeatType: 'mirror',
                         ease: 'easeInOut',
                       }}
-                      className="px-16 py-12 cursor-pointer rounded-lg font-semibold text-white bg-gradient-to-r from-blue-400 to-blue-600 hover:opacity-90 shadow-md text-sm md:text-base"
+                      className="px-16 py-12 cursor-pointer rounded-lg font-semibold text-white bg-gradient-to-r from-green-800 to-green-500 hover:opacity-90 shadow-md text-sm md:text-base"
                     >
                       Buy LARI Now
                     </motion.div>
