@@ -124,9 +124,9 @@ export default function Page() {
   }
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-blackish text-white min-h-screen">
       {/* NAVBAR */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-sm">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-stone/80 backdrop-blur-sm">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
@@ -139,17 +139,17 @@ export default function Page() {
             {/* Desktop Navigation */}
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
-                <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
-                <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
-                {/* <a className="text-black hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a> */}
-                <a className="text-black hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
+                <a className="hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('about')}>About</a>
+                <a className="hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('chart')}>Chart</a>
+                {/* <a className="hover:text-blue-900 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('hehe')}>Hehe</a> */}
+                <a className="hover:text-green-800 px-3 py-2 rounded-md text-md font-medium cursor-pointer" onClick={() => scrollToSection('how-to-buy')}>How to Buy</a>
               </div>
             </div>
 
             {/* Social Icons and Buy Now Button */}
             <div className="hidden md:flex items-center">
               <a className="text-gray-600 hover:text-gray-900 py-2" href="https://x.com/lari_hbar" target="_blank" rel="noopener noreferrer">
-                <Image src="/xIcon.png" alt="x" width={20} height={20} className='cursor-pointer' />
+                <Image src="/xWhite.png" alt="x" width={20} height={20} className='cursor-pointer' />
               </a>
               <a className="text-gray-600 hover:text-gray-900 px-3 py-2" href="https://t.me/+JggX0Bsc_8AwMTZh" target="_blank" rel="noopener noreferrer">
                 <Image src="/tg.png" alt="tg" width={50} height={50} className='cursor-pointer' />
@@ -351,7 +351,7 @@ export default function Page() {
         {/* ABOUT SECTION */}
         <section
           id="about"
-          className="min-h-screen pt-20 bg-white md:rounded-full max-w-5xl mx-auto"
+          className="min-h-screen pt-20 bg-stone-800 md:rounded-full max-w-5xl mx-auto"
         >
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Text Side */}
@@ -379,7 +379,7 @@ export default function Page() {
           {/* HOW TO BUY SECTION */}
           <section
             id="how-to-buy"
-            className="pb-20 pt-20 bg-white md:rounded-full"
+            className="pb-20 pt-20 bg-stone-800 md:rounded-full"
           >
             <div className="max-w-4xl mx-auto px-4 md:px-0">
               <h2 className="text-3xl md:text-4xl font-handwriting mb-8">
@@ -534,7 +534,7 @@ export default function Page() {
           </div>
           <div className="flex items-center gap-4">
             <a className="text-gray-600 hover:text-gray-900 py-2" href="https://x.com/lari_hbar" target="_blank" rel="noopener noreferrer">
-              <Image src="/xIcon.png" alt="x" width={20} height={20} className="cursor-pointer" />
+              <Image src="/xWhite.png" alt="x" width={20} height={20} className="cursor-pointer" />
             </a>
             <a className="text-gray-600 hover:text-gray-900 py-2" href="https://t.me/+JggX0Bsc_8AwMTZh" target="_blank" rel="noopener noreferrer">
               <Image src="/tg.png" alt="tg" width={50} height={50} className="cursor-pointer" />
