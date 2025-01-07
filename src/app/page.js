@@ -4,9 +4,6 @@ import { motion } from 'framer-motion'
 import {
   ChevronDown,
   ShoppingCart,
-  Users,
-  Flame,
-  Coins,
   Menu,
   X,
   ChartLine,
@@ -18,11 +15,6 @@ import {
 import { useEffect, useState } from 'react'
 import Image from 'next/image'
 
-const stats = [
-  { icon: <Users size={24} />, text: 'Community is Everything' },
-  { icon: <Flame size={24} />, text: 'Only Good Times' },
-  { icon: <Coins size={24} />, text: 'True Earning' },
-]
 
 export default function Page() {
   // Existing state
@@ -363,39 +355,13 @@ export default function Page() {
         >
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Text Side */}
-            <div className="max-w-2xl mx-auto px-4 md:px-8">
+            <div className="max-w-2xl mx-auto px-4 md:px-16">
               <h2 className="text-3xl md:text-4xl font-handwriting mb-2">
                 About LARI Token
               </h2>
-              <p className="text-sm md:text-base mb-8 leading-relaxed">
+              <p className="text-sm md:text-base leading-relaxed">
                 LARI crashed into the trenches on first day of Memejob.fun's launch and the dev quickly rugged and abandoned the project. The community then took over the token in order to save LARI and set up socials, a website and multiple liquidity pools. LARI hopes to increase awareness around LARI v2 pool rewards on Saucerswap, as well as provide educational content on the Saucerswap ecosystem
               </p>
-
-              <div className="space-y-2">
-                {stats.map((stat, index) => (
-                  <div key={index} className="flex items-center gap-2">
-                    {stat.icon}
-                    <span className="text-pink-500" />
-                    <span>{stat.text}</span>
-                  </div>
-                ))}
-              </div>
-
-              <span style={{ color: 'green' }}>
-                {/* Added a copy button for Token ID just below the stats */}
-              </span>
-              <div className="mt-4 flex items-center gap-2">
-                {/* Replace this hard-coded ID with your actual token ID if needed */}
-                <p id="token-id" className="font-semibold text-gray-900 text-sm md:text-base">
-                  Token ID: 0.0.7893583
-                </p>
-                <button
-                  onClick={handleCopy}
-                  className="inline-flex items-center px-3 py-1 text-sm rounded-md"
-                >
-                  {copied ? <Check size={16} className="mr-1" /> : <Copy size={16} className="mr-1" />}
-                </button>
-              </div>
             </div>
 
             {/* Image Side */}
@@ -559,26 +525,20 @@ export default function Page() {
         <span style={{ color: 'green' }}>
           {/* Footer has enough bottom margin so it's fully visible */}
         </span>
-        <footer className="flex items-center justify-center px-6 py-6 border-t mt-8">
-          <div className="flex flex-col gap-4 items-center">
-            <div className="flex items-center gap-4">
-              <Image src="/logo.png" alt="logo" width={60} height={60} />
-              <div className="text-sm text-gray-500">
-                Some funny quote that you need to add here, actually here,
-                actually a little further just here
-              </div>
-              <div className="flex items-center">
-                <a className="text-gray-600 hover:text-gray-900 py-2" href="https://x.com/lari_hbar" target="_blank" rel="noopener noreferrer">
-                  <Image src="/xIcon.png" alt="x" width={20} height={20} className="cursor-pointer" />
-                </a>
-                <a className="text-gray-600 hover:text-gray-900 py-2" href="https://t.me/+JggX0Bsc_8AwMTZh" target="_blank" rel="noopener noreferrer">
-                  <Image src="/tg.png" alt="tg" width={50} height={50} className="cursor-pointer" />
-                </a>
-              </div>
-            </div>
-            <div className="text-sm text-gray-400">
-              © 2024 LARI Token. All rights reserved.
-            </div>
+        <footer className="flex items-center justify-between px-6 py-6 border-t mt-8 mx-auto max-w-5xl">
+          <div className="flex items-center">
+            <Image src="/logo.png" alt="logo" width={60} height={60} />
+          </div>
+          <div className="text-sm text-gray-400">
+            © 2024 LARI Token. All rights reserved.
+          </div>
+          <div className="flex items-center gap-4">
+            <a className="text-gray-600 hover:text-gray-900 py-2" href="https://x.com/lari_hbar" target="_blank" rel="noopener noreferrer">
+              <Image src="/xIcon.png" alt="x" width={20} height={20} className="cursor-pointer" />
+            </a>
+            <a className="text-gray-600 hover:text-gray-900 py-2" href="https://t.me/+JggX0Bsc_8AwMTZh" target="_blank" rel="noopener noreferrer">
+              <Image src="/tg.png" alt="tg" width={50} height={50} className="cursor-pointer" />
+            </a>
           </div>
         </footer>
       </div>
