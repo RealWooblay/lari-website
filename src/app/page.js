@@ -107,17 +107,10 @@ export default function Page() {
       {/* 3) Subtle overlay over the entire background if you want */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/10 to-black/40 -z-10" />
 
-      {/* 4) RAIN at the top, but behind content & in front of background image */}
-      <div className="wrap pointer-events-none fixed top-0 left-0 w-full h-full -z-10">
-        {Array.from({ length: 144 }).map((_, i) => (
-          <div key={i} className="c"></div>
-        ))}
-      </div>
-
       {/* HERO SECTION */}
       <section
         id="hero"
-        className="relative min-h-[80vh] md:min-h-[120vh] flex flex-col items-center justify-center text-white"
+        className="relative min-h-[80vh] md:min-h-[100vh] flex flex-col items-center justify-center text-white"
       >
 
         {/* Title + Token ID */}
